@@ -41,11 +41,11 @@ if answer1 == "y":
                 upperLimit = 10
                 maxGuesses = 3
 
-            if gamelevelChoice == 2:
+            elif gamelevelChoice == 2:
                 upperLimit = 100
                 maxGuesses = 6
 
-            if gamelevelChoice == 3:
+            elif gamelevelChoice == 3:
                 upperLimit = 1000
                 maxGuesses = 9
 
@@ -99,6 +99,7 @@ if answer1 == "y":
 
                 elif Guess == computerNbr:
                     print("Correct")
+                    print("You got it in " + str(nbrofGuesses + 1) + " guess/es")
                     break
 
             while nbrofGuesses == maxGuesses:
