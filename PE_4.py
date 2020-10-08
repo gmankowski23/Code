@@ -19,5 +19,5 @@ for x in range(1,1000):
         if num == rev:
             pallist.append(rev)
 
-#This line takes all the numbers in my list and prints the largest of themff
+#This line takes all the numbers in my list and prints the largest of them
 print (max(pallist))
