@@ -103,3 +103,4 @@ int main() {
   else if (answer == "n") {
     std::cout << "Thank you for playing!\n\n";
   }
+}
