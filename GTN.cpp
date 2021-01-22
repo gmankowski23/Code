@@ -38,7 +38,7 @@ void Level() {
     std::cout << "Number is 0 - " << Upperlimit << "\n";
     std::cout << "You have " << Maxguesses << " guesses to find the correct number\n";
   }
-  else {
+  else if (level_choice ==3) {
     Upperlimit = 30;
     Maxguesses = 9;
     std::cout << "Number is 0 - " << Upperlimit << "\n";
@@ -76,12 +76,14 @@ void Guesses() {
     }
     else {
       std::cout << "Correct\n";
+      Tries = 0;
       break;
     }
   }
   while (Tries == Maxguesses) {
     std::cout << "Game Over...\n";
     std::cout << "Correct number was " << Number << "\n\n";
+    Tries = 0;
     break;
   }
 
